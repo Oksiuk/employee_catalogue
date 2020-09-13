@@ -1,0 +1,21 @@
+.app {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.app__section:first-child {
+    flex: 0 0 30%;
+    margin-right: 30px;
+}
+
+.app__section:last-child {
+    flex: 0 1 67%;
+}
+
+.app__section-title {
+    padding: 10px;
+    height: 30px;
+    text-align: center;
+}

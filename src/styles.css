@@ -1,0 +1,17 @@
+@import "~reset.css";
+@import './blocks/app/app.css';
+@import './blocks/list-item/list-item.css';
+@import './blocks/form/form.css';
+@import './blocks/list/list.css';
+
+body {
+    background: beige;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    margin: 100px auto;
+    border: 2px solid grey;
+    width: 900px
+}

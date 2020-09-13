@@ -1,0 +1,10 @@
+.list {
+    background-color: rgb(227, 227, 227);
+    padding: 20px;
+    list-style-type: none;
+    margin: 0;
+}
+
+.list__item {
+    margin-bottom: 15px;
+}

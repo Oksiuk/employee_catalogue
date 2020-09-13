@@ -1,0 +1,79 @@
+.list-item {
+    background-color: #ccc;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 10px 15px;
+}
+
+.list-item__email::before {
+    content: 'Email: ';
+}
+
+.list-item__email::after {
+    content: '|';
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.list-item__phone::before {
+    content: 'Телефон: ';
+}
+
+.list-item__btn-delete, .list-item__btn-edit {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+
+.list-item__btn-delete:hover, 
+.list-item__btn-edit:hover {
+    opacity: 0.6;
+}
+
+.list-item__btn-edit {
+    margin-right: 6px;
+    background-color: rgb(77, 219, 255);
+    position: relative;
+}
+
+.list-item__btn-edit::before {
+    background-image: url(../../img/edit.svg);
+}
+
+.list-item__btn-edit::before,
+.list-item__btn-delete::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+    z-index: 10;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.list-item__btn-delete {
+    background-color: rgb(255, 51, 51);
+    position: relative;
+}
+
+.list-item__btn-delete::before {
+    background-image: url(../../img/clear.svg);
+}
+.list-item__name {
+    grid-column: 1/2;
+}
+
+.list-item__name, .list-item__occupation {
+    margin: 0 0 20px;
+}
+
+
+.list-item__occupation, .list-item__contacts {
+    grid-column: 1/3;  
+}
+
+.list-item__options {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}

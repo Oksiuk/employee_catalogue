@@ -1,0 +1,35 @@
+.form {
+    background: rgb(227, 227, 227);
+    padding: 10px 20px 10px 20px;
+}
+
+.form__submit-btn {
+    margin: auto;
+    height: 30px;
+    width: 95%;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: rgb(36, 209, 108);
+}
+
+.form__field-wrap {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form__input {
+    height: 30px;
+    width: 100%;
+}
+
+.form__input-error {
+    color: red;
+    font-size: 14px;
+}
+
+.form__title {
+    text-align: center;
+    margin-bottom: 10px;
+}
